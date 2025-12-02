@@ -1,14 +1,17 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name="pywal",
+    name="stefan-pywal",
     version="3.8.12+stefan",
     author="Stefan Mijalkovic",
     author_email="stefan.mijalkovic94@gmail.com",
     description="A customized version of pywal that generates colorschemes from images.",
     url="https://github.com/Mijalkovic/pywal",
     license="MIT",
-    packages=find_packages(),
+    # This is the crucial change: we explicitly list the packages to install.
+    packages=["pywal", "pywal.backends"],
+    # This tells the installer to include non-python files inside the package (like templates).
+    include_package_data=True,
     entry_points={
         "console_scripts": [
             "wal=pywal.__main__:main",
