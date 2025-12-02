@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="stefan-pywal",
-    version="3.8.12-stefan",
+    version="3.8.12+stefan",
     author="Stefan Mijalkovic",
     author_email="stefan.mijalkovic94@gmail.com",
     description="A customized version of pywal that generates colorschemes from images.",
