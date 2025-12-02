@@ -476,7 +476,6 @@ def get(
     else:
         contrast = ""
 
-    # home_dylan_img_jpg_backend_1.2.2.json
     if not contrast or contrast == "":
         cache_name = cache_fname(
             img, backend, light, cache_dir, sat,
